@@ -1,18 +1,23 @@
 Package: oposSOM.PT
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Pseudotemporal Analysis of RNA-Sequencing Data
+Version: 0.9.1
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Maria",
+           family = "Schmidt",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           email = "mschmidt@izbi.uni-leipzig.de")
 Maintainer: 'Maria Schmidt' <schmidt@izbi.uni-leipzig.de>
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+Description: oposSOM.PT is an R package designed for reconstructing transcriptional trajectories in cell-state space and in gene-state space using single cell RNA-sequencing data preprocessed by the R-package oposSOM (https://rdrr.io/github/hloefflerwirth/oposSOM/).
+Depends:
+    R (>= 3.5)
 Encoding: UTF-8
-Import: URDoposSOMrasterVisdplyrtopDistancerasterRColorBrewer
+Imports:     URD,
+    oposSOM,
+    raster,
+    rasterVis,
+    dplyr,
+    topoDistance,
+    RColorBrewer
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
